@@ -9,13 +9,11 @@ public class User {
     private String name;
     private int phone;
     private RouteLocation location;
-    private boolean walking;
 
     public User(String name, int phone, RouteLocation location) {
         this.name = name;
         this.phone = phone;
         this.location = location;
-        this.walking = false;
     }
 
     public String getName() {
@@ -28,10 +26,6 @@ public class User {
 
     public RouteLocation getLocation() {
         return this.location;
-    }
-
-    public void setWalking (boolean isWalking) {
-        this.walking = isWalking;
     }
 
     public void setphone (int phone) {
